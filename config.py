@@ -7,34 +7,34 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID = os.environ.get("API_ID", "")  # ⚠️ Required
-    API_HASH = os.environ.get("API_HASH", "")  # ⚠️ Required
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")  # ⚠️ Required
+    API_ID = os.environ.get("API_ID", "20860620")  # ⚠️ Required
+    API_HASH = os.environ.get("API_HASH", "25d2343b36fc5aea3604c6c50a8e2b59")  # ⚠️ Required
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7334452310:AAFtdl9zLec-rW8YDP2hPiMtWxd9EEqA7Fs")  # ⚠️ Required
 
     # premium 4g renaming client
-    STRING_API_ID = os.environ.get("STRING_API_ID", "")
-    STRING_API_HASH = os.environ.get("STRING_API_HASH", "")
+    STRING_API_ID = os.environ.get("STRING_API_ID", "20860620")
+    STRING_API_HASH = os.environ.get("STRING_API_HASH", "25d2343b36fc5aea3604c6c50a8e2b59")
     STRING_SESSION = os.environ.get("STRING_SESSION", "")
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME", "Cluster0")
-    DB_URL = os.environ.get("DB_URL", "")  # ⚠️ Required
+    DB_NAME = os.environ.get("DB_NAME", "Cluster00")
+    DB_URL = os.environ.get("DB_URL", "mongodb+srv://mex:rex@cluster7.jrzowqz.mongodb.net/?retryWrites=true&w=majority")  # ⚠️ Required
 
     # other configs
     BOT_UPTIME = time.time()
-    START_PIC = os.environ.get("START_PIC", "")
+    START_PIC = os.environ.get("START_PIC", "https://envs.sh/qdw.jpg")
     ADMIN = [int(admin) if id_pattern.search(
-        admin) else admin for admin in os.environ.get('ADMIN', '').split()]  # ⚠️ Required
+        admin) else admin for admin in os.environ.get('ADMIN', '6199677027').split()]  # ⚠️ Required
     
-    FORCE_SUB = os.environ.get("FORCE_SUB", "") # ⚠️ Required Username without @
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))  # ⚠️ Required
+    FORCE_SUB = os.environ.get("FORCE_SUB", "renamexxxlog") # ⚠️ Required Username without @
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001956549798"))  # ⚠️ Required
     FLOOD = int(os.environ.get("FLOOD", '10'))
     BANNED_USERS = set(int(x) for x in os.environ.get(
         "BANNED_USERS", "1234567890").split())
 
     # wes response configuration
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
-    PORT = int(os.environ.get("PORT", "8080"))
+    PORT = int(os.environ.get("PORT", "8030"))
 
 
 class Txt(object):
@@ -86,7 +86,7 @@ Exᴀᴍᴩʟᴇ:- <code> /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 
 ☞ Fᴏʀ Exᴀᴍᴘʟᴇ:-
 
-◦ <code> -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Powered By:- @team_netflix" -metadata author="@Codeflix_bots" -metadata:s:s title="Subtitled By :- @Team_netflix" -metadata:s:a title="By :- @team_netflix" -metadata:s:v title="By:- @Codeflix_bots" </code>
+◦ <code> -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Powered By:- @Anime_Bloodline" -metadata author="@Anime_Bloodline" -metadata:s:s title="Subtitled By :- @Anime_Bloodline" -metadata:s:a title="By :- @Anime_Bloodline" -metadata:s:v title="By:- @Anime_Bloodline" </code>
 
 📥 Fᴏʀ Hᴇʟᴘ Cᴏɴᴛ. @Codeflix_bots
 """
